@@ -141,7 +141,7 @@ public:
             if (npc_maxx_a_million_escort_groupquestsAI* pEscortAI = CAST_AI(npc_maxx_a_million_escort_groupquests::npc_maxx_a_million_escort_groupquestsAI, creature->AI()))
             {
                 creature->SetFaction(FACTION_ESCORTEE_N_NEUTRAL_PASSIVE);
-                pEscortAI->Start(false, false, player->GetGUID());
+                pEscortAI->Start(false, player->GetGUID());
             }
         }
         return true;

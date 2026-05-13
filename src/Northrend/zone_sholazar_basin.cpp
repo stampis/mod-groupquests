@@ -68,11 +68,14 @@ public:
                 Movement::PointsArray pathPoints;
                 pathPoints.push_back(G3D::Vector3(me->GetPositionX(), me->GetPositionY(), me->GetPositionZ()));
 
-                WaypointPath const* i_path = sWaypointMgr->GetPath(NPC_PLANE);
-                for (uint8 i = 0; i < i_path->size(); ++i)
+                WaypointPath const* path = sWaypointMgr->GetPath(NPC_PLANE);
+                if (!path)
+                    return;
+
+                for (uint8 i = 0; i < path->Nodes.size(); ++i)
                 {
-                    WaypointData const* node = i_path->at(i);
-                    pathPoints.push_back(G3D::Vector3(node->x, node->y, node->z));
+                    WaypointNode const* node = &path->Nodes[i];
+                    pathPoints.push_back(G3D::Vector3(node->X, node->Y, node->Z));
                 }
 
                 me->GetMotionMaster()->MoveSplinePath(&pathPoints);

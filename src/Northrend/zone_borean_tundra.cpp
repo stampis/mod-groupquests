@@ -198,7 +198,7 @@ public:
                 AttackStart(who);
             }
 
-            _events.ScheduleEvent(EVENT_FROSTBOLT, 3000, 4000);
+            _events.ScheduleEvent(EVENT_FROSTBOLT, 3000ms, 4000ms);
         }
 
         void SpellHit(Unit* unit, SpellInfo const* spell) override
@@ -209,7 +209,7 @@ public:
                 {
                     _playerGUID = player->GetGUID();
                     _chainsCast = true;
-                    _events.ScheduleEvent(EVENT_ARCANE_CHAINS, 4000);
+                    _events.ScheduleEvent(EVENT_ARCANE_CHAINS, 4000ms);
                 }
             }
         }
@@ -229,7 +229,7 @@ public:
                 {
                 case EVENT_FROSTBOLT:
                     DoCastVictim(SPELL_FROSTBOLT);
-                    _events.ScheduleEvent(EVENT_FROSTBOLT, 3000, 4000);
+                    _events.ScheduleEvent(EVENT_FROSTBOLT, 3000ms, 4000ms);
                     break;
                 case EVENT_ARCANE_CHAINS:
                     if (me->HasAura(SPELL_ARCANE_CHAINS))
@@ -470,7 +470,7 @@ public:
                 go->UseDoorOrButton();
 
             if (npc_escortAI* pEscortAI = CAST_AI(npc_lurgglbr_groupquests::npc_lurgglbr_groupquestsAI, creature->AI()))
-                pEscortAI->Start(true, false, player->GetGUID());
+                pEscortAI->Start(true, player->GetGUID());
 
             creature->SetFaction(player->GetTeamId() == TEAM_ALLIANCE ? FACTION_ESCORTEE_A_PASSIVE : FACTION_ESCORTEE_H_PASSIVE);
             return true;

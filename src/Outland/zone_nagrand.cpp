@@ -55,7 +55,7 @@ public:
             }
 
             prisoner->AI()->Talk(SAY_FREE, player);
-            prisoner->DespawnOrUnsummon(6000);
+            prisoner->DespawnOrUnsummon(6000ms);
         }
 
         return true;

@@ -144,7 +144,7 @@ public:
             GetCreatureListWithEntryInGrid(cList, me, NPC_WINTERFIN_TADPOLE, 5.0f);
             for (std::list<Creature*>::const_iterator itr = cList.begin(); itr != cList.end(); ++itr)
             {
-                (*itr)->DespawnOrUnsummon(urand(45000, 60000));
+                (*itr)->DespawnOrUnsummon(urand(45000ms, 60000ms));
                 (*itr)->GetMotionMaster()->MoveFollow(player, 1.0f, frand(0.0f, 2 * M_PI), MOTION_SLOT_CONTROLLED);
 
                 if (Group* group = player->GetGroup())
@@ -214,7 +214,7 @@ public:
                 }
             }
 
-            (*itr)->DespawnOrUnsummon(5000);
+            (*itr)->DespawnOrUnsummon(5000ms);
             (*itr)->GetMotionMaster()->MovePoint(1, go->GetPositionX() + 5, go->GetPositionY(), go->GetPositionZ());
             (*itr)->AI()->Talk(SAY_FREE_0);
             (*itr)->GetMotionMaster()->Clear();

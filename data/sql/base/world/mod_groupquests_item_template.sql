@@ -2631,3 +2631,29 @@ UPDATE `item_template` SET `Flags`=`Flags`|2048 WHERE `entry`=49644;
 
 -- Diseased Wolf Pelt (Quest: Wolves Across the Border (Id: 33))
 UPDATE `item_template` SET `Flags`=`Flags`|2048 WHERE `entry`=50432;
+
+--
+--
+-- All items with class 12 (Quest)
+UPDATE `item_template` SET `Flags`=`Flags`|2048 WHERE `class`=12;
+
+-- Draconic for Dummies
+UPDATE `item_template` SET `Flags`=`Flags`|2048 WHERE `entry` IN (21104, 21105, 21106, 21107, 21108, 21109, 21110);
+
+-- Head of Onyxia (Quest: Victory for the Horde (Id: 7490))
+UPDATE `item_template` SET `Flags`=`Flags`|2048 WHERE `entry`=18422;
+
+-- Head of Onyxia (Quest: Victory for the Alliance (Id: 7495))
+UPDATE `item_template` SET `Flags`=`Flags`|2048 WHERE `entry`=18423;
+
+-- Head of Nefarian (Quest: The Lord of Blackrock (Id: 7783))
+UPDATE `item_template` SET `Flags`=`Flags`|2048 WHERE `entry`=19002;
+
+-- Head of Nefarian (Quest: The Lord of Blackrock (Id: 7781))
+UPDATE `item_template` SET `Flags`=`Flags`|2048 WHERE `entry`=19003;
+
+-- Eye of C'Thun (Quest: C'Thun's Legacy (Id: 8801))
+UPDATE `item_template` SET `Flags`=`Flags`|2048 WHERE `entry`=21221;
+
+-- The Phylactery of Kel'Thuzad (Quest: The Fall of Kel'Thuzad (Id: 9120))
+UPDATE `item_template` SET `Flags`=`Flags`|2048 WHERE `entry`=22520;
