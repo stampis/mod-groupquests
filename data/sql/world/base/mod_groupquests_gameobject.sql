@@ -313,3 +313,7 @@ UPDATE `gameobject` SET `spawntimesecs`=1 WHERE `id`=194423;
 -- Black Knight's Orders (Quest: The Black Knight's Orders (Id: 13663))
 -- Changed from 120 seconds to 1 second
 UPDATE `gameobject` SET `spawntimesecs`=1 WHERE `id`=194424;
+
+-- Charred Bone Fragment (Quest: Digging Up the Past (Id: 9680))
+-- Changed from 900 seconds to 1 second
+UPDATE `gameobject` SET `spawntimesecs`=1 WHERE `id`=181963;
