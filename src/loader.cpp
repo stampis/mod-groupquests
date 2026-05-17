@@ -1,3 +1,4 @@
+void AddSC_PlayerGroupLoot();
 void AddSC_zone_borean_tundra_groupquests();
 void AddSC_zone_desolace_groupquests();
 void AddSC_zone_dragonblight_groupquests();
@@ -16,6 +17,7 @@ void AddSC_quest_spell_scripts_groupquests();
 
 void Addmod_groupquestsScripts()
 {
+    AddSC_PlayerGroupLoot();
     AddSC_zone_borean_tundra_groupquests();
     AddSC_zone_desolace_groupquests();
     AddSC_zone_dragonblight_groupquests();
