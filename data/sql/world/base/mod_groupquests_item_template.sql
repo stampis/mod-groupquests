@@ -2638,7 +2638,7 @@ UPDATE `item_template` SET `Flags`=`Flags`|2048 WHERE `entry`=50432;
 UPDATE `item_template` SET `Flags`=`Flags`|2048 WHERE `class`=12;
 
 -- Draconic for Dummies
-UPDATE `item_template` SET `Flags`=`Flags`|2048 WHERE `entry` IN (21104, 21105, 21106, 21107, 21108, 21109, 21110);
+UPDATE `item_template` SET `Flags`=`Flags`|2048 WHERE `entry` IN (21103, 21104, 21105, 21106, 21107, 21108, 21109, 21110);
 
 -- Head of Onyxia (Quest: Victory for the Horde (Id: 7490))
 UPDATE `item_template` SET `Flags`=`Flags`|2048 WHERE `entry`=18422;
